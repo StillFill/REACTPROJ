@@ -41,6 +41,16 @@
   border-radius: 15px;
 }
 
+.products-count-container {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.products-count-container .css-10nd86i {
+  width: 30%;
+}
+
 .products-header {
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 3em;
@@ -54,7 +64,6 @@
 }
 
 .products-count {
-  margin: 30px 0;
   font-size: 1.5em;
   text-decoration: underline;
   text-decoration-color: gold;

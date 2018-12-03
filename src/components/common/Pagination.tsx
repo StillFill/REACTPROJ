@@ -9,7 +9,6 @@ class Pagination extends React.Component<{
 }> {
   public render() {
     const { handlePageChange, totalPages, currentPage } = this.props;
-    console.log(currentPage, totalPages)
     return (
       <div className="pagination-container">
         <div className="pagination">

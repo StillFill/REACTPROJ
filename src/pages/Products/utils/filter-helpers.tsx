@@ -29,8 +29,6 @@ export default class FilterHelpers {
   ): any[] {
     const firstIndex = resultsPerPage * (currentPage - 1);
     const lastIndex = firstIndex + resultsPerPage;
-    console.log(products)
-    console.log(firstIndex, lastIndex);
     return products.slice(firstIndex, lastIndex);
   }
 }
