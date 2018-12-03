@@ -165,17 +165,18 @@ class Products extends React.Component<States, any> {
             <Col md={12}>
               {products.map(
                 ({
+                  _id,
                   images,
                   name,
                   category,
                   price,
                   discount_percentage
                 }: Product) => (
-                  <div className="product-row-container">
+                  <div key={_id} className="product-row-container">
                     <div className="images-container">
                       <div className="product-images">
                         {images.map((image: string) => (
-                          <img src={image} />
+                          <img key={image} src={image} />
                         ))}
                       </div>
                     </div>
