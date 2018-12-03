@@ -7,14 +7,10 @@ Você precisará ter o mongodb instalado no seu computador
 
 Para instalar o mongodb rode:
 
-
-- Para dar update na lista de pacotes para os pacotes mais recentes
-```
-sudo apt update
-```
-
 - Para instalar o pacote do MONGODB
 ```
+sudo apt update
+
 sudo apt install -y mongodb
 ```
 
@@ -24,7 +20,7 @@ No terminal, use o comando
 mongod
 ```
 
-Com ele rodando, você pode inicializar a API
+- Para iniciar a API
 
 Clone o seguinte repositório:
 
@@ -45,6 +41,8 @@ nodemon dist/main.js
 ```
 
 Com isso temos o mongodb e nossa api rodando, basta rodar a aplicação
+
+- Rodando a aplicação
 
 No terminal rode:
 
