@@ -63,7 +63,7 @@ class Products extends React.Component<States, any> {
   };
 
   public componentDidMount = async () => {
-    const myRequest = new Request("http://localhost:3006/get-products", {});
+    const myRequest = new Request("http://ec2-18-228-6-188.sa-east-1.compute.amazonaws.com:3007/get-products", {});
     const result = await fetch(myRequest);
     const body = await result.json();
     const { response } = body;
@@ -187,6 +187,8 @@ class Products extends React.Component<States, any> {
                       </div>
                       <div>
                         <span>
+                          {console.log(price)}
+                          {console.log(discount_percentage)}
                           <span className="product-price">R${price / 100}</span>{" "}
                           por{" "}
                           <strong>
